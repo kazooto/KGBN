@@ -1,5 +1,5 @@
 <div class="comment highlight">
   <span class="body">
-    <%= comment.body %>
+    <%= "#{comment.body} by #{comment.user.try(:name) || '匿名'}" %>
   </span>
 </div>
