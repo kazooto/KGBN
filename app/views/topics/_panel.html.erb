@@ -1,6 +1,6 @@
 <div class="topic highlight">
   <div class="title">
-    <%= link_to topic.title, new_topic_comment_path(topic) %>
+    <%= link_to "#{topic.title} by #{topic.user.name}", new_topic_comment_path(topic) %>
   </div>
   <div class="date">
     <%= topic.created_at %>
